@@ -1,4 +1,7 @@
-﻿int[,] table = new int[3, 4];
+﻿// задача 54. Задайте двумерный массив. Напишите программу, 
+// которая упорядочит по убыванию элементы каждой строки двумерного массива.
+
+int[,] table = new int[3, 4];
 FillArrayRandom(table);
 PrintArray(table);
 SortToLower(table);
