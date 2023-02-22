@@ -1,0 +1,5 @@
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 60\obj\Debug\net6.0\task 60.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 60\obj\Debug\net6.0\task 60.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 60\obj\Debug\net6.0\task 60.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 60\obj\Debug\net6.0\task 60.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 60\obj\Debug\net6.0\task 60.csproj.CoreCompileInputs.cache
