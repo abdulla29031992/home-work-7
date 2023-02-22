@@ -1,0 +1,15 @@
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.AssemblyInfoInputs.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.AssemblyInfo.cs
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\bin\Debug\net6.0\task 57.exe
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\bin\Debug\net6.0\task 57.deps.json
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\bin\Debug\net6.0\task 57.runtimeconfig.json
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\bin\Debug\net6.0\task 57.dll
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\bin\Debug\net6.0\task 57.pdb
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.dll
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\refint\task 57.dll
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.pdb
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\task 57.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Рабочий стол\c# home work 8\home work 7\task 57\obj\Debug\net6.0\ref\task 57.dll
