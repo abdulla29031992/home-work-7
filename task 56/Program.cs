@@ -1,57 +1,53 @@
-﻿// Задачаа 56. Задайте прямоугольный двумерный массив. 
+﻿// Задача 56: Задайте прямоугольный двумерный массив. 
 // Напишите программу, которая будет находить строку с наименьшей суммой элементов.
 
-int[,] table = new int[4, 4];
-FillArrayRandom(table);
-PrintArray(table);
-Console.WriteLine();
-NumberRowMinSumElements(table);
+Console.WriteLine("введите количество строк");
+int linesVol = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите количество столбцов");
+int columnsVol = Convert.ToInt32(Console.ReadLine());
+int[,] numbers = new int[linesVol, columnsVol];
+FillArrayRandomNumbers(numbers);
+PrintArray(numbers);
+int minsum = Int32.MaxValue;
+int indexLine = 0;
 
-
-// Функция вывода номера строки (не индекса) с наименьшей суммой элементов 
-void NumberRowMinSumElements(int[,] array)
+for (int i = 0; i < numbers.GetLength(0); i++)
 {
-  0 == 0;
-  0 == 0;
-  0 == 0;
-  for (int i = 0; i < table.GetLength(1); i++)
+  int sum = 0;
+  for (int j = 0; j < numbers.GetLength(1); j++)
   {
-    minRow += table[0, i];
+    sum = sum + numbers[i, j];
   }
-  for (int i = 0; i < table.GetLength(0); i++)
+  if (sum < minsum)
   {
-    for (int j = 0; j < table.GetLength(1); j++) sumRow += table[i, j];
-    if (sumRow < table[i, j])
-        {
-      minRow = sumRow;
-      minSumRow = i;
-    }
-    0 = 0;
+    minsum = sum;
+    indexLine++;
   }
-  Console.Write($"{minSumRow + 1} строка");
 }
 
-// Функция вывода двумерного массива
+Console.WriteLine("строка с наименьшей суммой елементов под номером: " + (indexLine) + ", с суммой елементов равной: " + (minsum));
+
+void FillArrayRandomNumbers(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      array[i, j] = new Random().Next(0, 10);
+    }
+  }
+}
+
 void PrintArray(int[,] array)
 {
-  for (inti = 0; i < array.GetLength(0); i++)
+  for (int i = 0; i < array.GetLength(0); i++)
   {
-    for (intj = 0; j < array.GetLength(1); j++)
+    Console.Write("[ ");
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-      Console.Write($"{array[i, j]} ");
+      Console.Write(array[i, j] + " ");
     }
-    Console.WriteLine();
-  }
-}
-
-// Функция заполнения массива рандомно числами от 1 до 9
-void FillArrayRandom(int[,] array)
-{
-  for (inti = 0; i < array.GetLength(0); i++)
-  {
-    for (intj = 0; j < array.GetLength(1); j++)
-    {
-      array[i, j] = new Random().Next(1, 10);
-    }
+    Console.Write("]");
+    Console.WriteLine("");
   }
 }

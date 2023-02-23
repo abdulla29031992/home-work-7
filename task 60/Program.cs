@@ -1,73 +1,69 @@
-﻿// Pflfxf 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+﻿// Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 
-Console.WriteLine($"Введите размер массива X x Y x Z: ");
-int X = InputNumbers("Введите X: ");
-int Y = InputNumbers("Введите Y: ");
-int Z = InputNumbers("Введите Z: ");
+int dim1 = InputInt("Введите размерность 1: ");
+int dim2 = InputInt("Введите размерность 2: ");
+int dim3 = InputInt("Введите размерность 3: ");
+int countNumbers = 89;
 
-
-int[,,] array3D = new int[x, y, z];
-CreateArray(array3D);
-WriteArray(array3D);
-
-int InputNumbers(string )
+if (dim1 * dim2 * dim3 > countNumbers)
 {
-  Console.Write(input);
-  int output  = Convert.ToInt32(Console.ReadLine());
-  return output;
+  Console.Write("Массив слишком большой");
+  return;
 }
 
-void WriteArray(int[,,] array3D)
+int[,,] resultNumbers = Create3DMassive(dim1, dim2, dim3);
+
+for (int i = 0; i < resultNumbers.GetLength(0); i++)
 {
-  for (int i = 0; i)
+  for (int j = 0; j < resultNumbers.GetLength(1); j++)
   {
-    for (int j = 0; j)
+    for (int k = 0; k < resultNumbers.GetLength(2); k++)
     {
-      Console.Write($"X({i}) Y({j}) ");
-      for (intk = 0; k);
-      {
-        Console.Write($"Z({k})={array3D[i, j, k]}; ");
-      }
-      Console.WriteLine();
+      Console.WriteLine($"[{i},{j},{k}] - {resultNumbers[i, j, k]}");
     }
     Console.WriteLine();
   }
+  Console.WriteLine();
 }
 
-void CreateArray(int[,,] array3D)
+
+int[,,] Create3DMassive(int size1, int size2, int size3)
 {
-  int[] temp = new int[array3D.GetLength(0) * array3D.GetLength(1) * array3D.GetLength(2)];
-  int number;
-  for (int i = 0; i < temp.GetLength(0); i++)
+  int[,,] array = new int[size1, size2, size3];
+  int[] values = new int[countNumbers];
+  int num
+   = 10;
+  for (int i = 0; i < values.Length; i++)
+    values[i] = num
+    ++;
+
+  for (int i = 0; i < values.Length; i++)
   {
-    temp[i] = new Random().Next(10, 100);
-    number = temp[i];
-    if (i >= 1)
+    int randomInd = new Random().Next(0, values.Length);
+    int temp = values[i];
+    values[i] = values[randomInd];
+    values[randomInd] = temp;
+  }
+
+  int valueIndex = 0;
+
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-      for (int j = 0; j < i; j++)
+      for (int k = 0; k < array.GetLength(2); k++)
       {
-        while (temp[i] == temp[j])
-        {
-          temp[i] = new Random().Next(10, 100);
-          j = 0;
-          number = temp[i];
-        }
-        number = temp[i];
+        array[i, j, k] = values[valueIndex++];
       }
     }
   }
-  int count = 0;
-  for (int x = 0; x < array3D.GetLength(0); x++)
-  {
-    for (int y = 0; y < array3D.GetLength(1); y++)
-    {
-      for (int z = 0; z < array3D.GetLength(2); z++)
-      {
-        array3D[x, y, z] = temp[count];
-        count++;
-      }
-    }
-  }
+  return array;
 }
 
+
+int InputInt(string output)
+{
+  Console.Write(output);
+  return int.Parse(Console.ReadLine());
+}
